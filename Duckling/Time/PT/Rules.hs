@@ -29,7 +29,7 @@ ruleNamedday :: Rule
 ruleNamedday = Rule
   { name = "named-day"
   , pattern =
-    [ regex "segunda((\\s|\\-)feira)?|seg\\.?"
+    [ regex "segunda((\\s|\\-)feira)?"
     ]
   , prod = \_ -> tt $ dayOfWeek 1
   }
@@ -60,7 +60,7 @@ ruleNamedmonth12 :: Rule
 ruleNamedmonth12 = Rule
   { name = "named-month"
   , pattern =
-    [ regex "dezembro|dez\\.?"
+    [ regex "dezembro"
     ]
   , prod = \_ -> tt $ month 12
   }
@@ -69,7 +69,7 @@ ruleNamedday2 :: Rule
 ruleNamedday2 = Rule
   { name = "named-day"
   , pattern =
-    [ regex "ter(ç|c)a((\\s|\\-)feira)?|ter\\."
+    [ regex "ter(ç|c)a((\\s|\\-)feira)"
     ]
   , prod = \_ -> tt $ dayOfWeek 2
   }
@@ -139,7 +139,7 @@ ruleNamedday6 :: Rule
 ruleNamedday6 = Rule
   { name = "named-day"
   , pattern =
-    [ regex "s(á|a)bado|s(á|a)b\\.?"
+    [ regex "s(á|a)bado"
     ]
   , prod = \_ -> tt $ dayOfWeek 6
   }
@@ -162,7 +162,7 @@ ruleNamedmonth7 :: Rule
 ruleNamedmonth7 = Rule
   { name = "named-month"
   , pattern =
-    [ regex "julho|jul\\.?"
+    [ regex "julho"
     ]
   , prod = \_ -> tt $ month 7
   }
@@ -231,7 +231,7 @@ ruleNamedday4 :: Rule
 ruleNamedday4 = Rule
   { name = "named-day"
   , pattern =
-    [ regex "quinta((\\s|\\-)feira)?|qui\\.?"
+    [ regex "quinta((\\s|\\-)feira)?"
     ]
   , prod = \_ -> tt $ dayOfWeek 4
   }
@@ -587,7 +587,7 @@ ruleNamedmonth :: Rule
 ruleNamedmonth = Rule
   { name = "named-month"
   , pattern =
-    [ regex "janeiro|jan\\.?"
+    [ regex "janeiro"
     ]
   , prod = \_ -> tt $ month 1
   }
@@ -631,7 +631,7 @@ ruleNamedmonth3 :: Rule
 ruleNamedmonth3 = Rule
   { name = "named-month"
   , pattern =
-    [ regex "mar(ç|c)o|mar\\.?"
+    [ regex "mar(ç|c)o"
     ]
   , prod = \_ -> tt $ month 3
   }
@@ -693,7 +693,7 @@ ruleNamedmonth4 :: Rule
 ruleNamedmonth4 = Rule
   { name = "named-month"
   , pattern =
-    [ regex "abril|abr\\.?"
+    [ regex "abril"
     ]
   , prod = \_ -> tt $ month 4
   }
@@ -741,7 +741,7 @@ ruleNamedday5 :: Rule
 ruleNamedday5 = Rule
   { name = "named-day"
   , pattern =
-    [ regex "sexta((\\s|\\-)feira)?|sex\\.?"
+    [ regex "sexta((\\s|\\-)feira)?"
     ]
   , prod = \_ -> tt $ dayOfWeek 5
   }
@@ -801,7 +801,7 @@ ruleNamedmonth2 :: Rule
 ruleNamedmonth2 = Rule
   { name = "named-month"
   , pattern =
-    [ regex "fevereiro|fev\\.?"
+    [ regex "fevereiro"
     ]
   , prod = \_ -> tt $ month 2
   }
@@ -952,7 +952,7 @@ ruleNamedmonth6 :: Rule
 ruleNamedmonth6 = Rule
   { name = "named-month"
   , pattern =
-    [ regex "junho|jun\\.?"
+    [ regex "junho"
     ]
   , prod = \_ -> tt $ month 6
   }
@@ -989,7 +989,7 @@ ruleNamedmonth8 :: Rule
 ruleNamedmonth8 = Rule
   { name = "named-month"
   , pattern =
-    [ regex "agosto|ago\\.?"
+    [ regex "agosto"
     ]
   , prod = \_ -> tt $ month 8
   }
@@ -1368,7 +1368,7 @@ ruleNamedmonth5 :: Rule
 ruleNamedmonth5 = Rule
   { name = "named-month"
   , pattern =
-    [ regex "maio|mai\\.?"
+    [ regex "maio"
     ]
   , prod = \_ -> tt $ month 5
   }
@@ -1377,7 +1377,7 @@ ruleNamedday7 :: Rule
 ruleNamedday7 = Rule
   { name = "named-day"
   , pattern =
-    [ regex "domingo|dom\\.?"
+    [ regex "domingo"
     ]
   , prod = \_ -> tt $ dayOfWeek 7
   }
@@ -1417,7 +1417,7 @@ ruleNamedmonth10 :: Rule
 ruleNamedmonth10 = Rule
   { name = "named-month"
   , pattern =
-    [ regex "outubro|out\\.?"
+    [ regex "outubro"
     ]
   , prod = \_ -> tt $ month 10
   }
@@ -1469,7 +1469,7 @@ ruleNamedmonth11 :: Rule
 ruleNamedmonth11 = Rule
   { name = "named-month"
   , pattern =
-    [ regex "novembro|nov\\.?"
+    [ regex "novembro"
     ]
   , prod = \_ -> tt $ month 11
   }
@@ -1487,7 +1487,7 @@ ruleNamedday3 :: Rule
 ruleNamedday3 = Rule
   { name = "named-day"
   , pattern =
-    [ regex "quarta((\\s|\\-)feira)?|qua\\.?"
+    [ regex "quarta((\\s|\\-)feira)?"
     ]
   , prod = \_ -> tt $ dayOfWeek 3
   }
@@ -1505,7 +1505,7 @@ ruleNamedmonth9 :: Rule
 ruleNamedmonth9 = Rule
   { name = "named-month"
   , pattern =
-    [ regex "setembro|set\\.?"
+    [ regex "setembro"
     ]
   , prod = \_ -> tt $ month 9
   }
